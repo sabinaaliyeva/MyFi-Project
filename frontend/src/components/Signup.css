@@ -1,0 +1,232 @@
+/* src/components/Signup.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Light Mode (default) */
+.signup-page.light {
+  background-color: #ffffff; /* White background in light mode */
+}
+
+/* Dark Mode */
+.signup-page.dark {
+  background-color: #0f1a2b; /* Dark blue background in dark mode */
+}
+
+/* Logo Container */
+.logo-container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.signup-logo {
+  width: 150px;
+  height: auto;
+}
+
+/* Signup Container Styles */
+.signup-container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Light mode signup box is dark blue, dark mode signup box is white */
+.signup-page.light .signup-container {
+  background-color: #001f3f; /* Dark Blue box in light mode */
+}
+
+.signup-page.dark .signup-container {
+  background-color: #ffffff; /* White box in dark mode */
+}
+
+.signup-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Adjust title color based on mode */
+.signup-page.light .signup-form h2 {
+  color: #ffffff; /* White text on dark box in light mode */
+}
+
+.signup-page.dark .signup-form h2 {
+  color: #1e40af; /* Deep blue text on white box in dark mode */
+}
+
+.signup-form .error {
+  color: #e11d48;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.signup-form .form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Label colors depending on mode */
+.signup-page.light .signup-form label {
+  color: #ffffff; /* White text on dark background */
+}
+
+.signup-page.dark .signup-form label {
+  color: #1e40af; /* Deep blue on white background */
+}
+
+/* Input Styles */
+.signup-form input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  color: #333333;
+}
+
+.signup-form input:focus {
+  border-color: #1e40af;
+  outline: none;
+  box-shadow: 0 0 5px rgba(30, 64, 175, 0.3);
+}
+
+/* Submit Button Styles */
+.signup-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Adjust submit button colors depending on mode */
+.signup-page.light .signup-form button[type="submit"] {
+  background-color: #ffffff;
+  color: #001f3f;
+}
+
+.signup-page.light .signup-form button[type="submit"]:hover {
+  background-color: #f0f4f8;
+}
+
+.signup-page.dark .signup-form button[type="submit"] {
+  background-color: #1e40af;
+  color: #ffffff;
+}
+
+.signup-page.dark .signup-form button[type="submit"]:hover {
+  background-color: #162e72;
+}
+
+/* Subtext and Links */
+.signup-form p {
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+/* Adjust text based on mode */
+.signup-page.light .signup-form p {
+  color: #ffffff; /* White on dark background */
+}
+
+.signup-page.dark .signup-form p {
+  color: #4b5563; /* Gray on white background */
+}
+
+.signup-form p a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Adjust link colors based on mode */
+.signup-page.light .signup-form p a {
+  color: #d1d5db; /* Light gray link on dark background */
+}
+
+.signup-page.light .signup-form p a:hover {
+  text-decoration: underline;
+}
+
+.signup-page.dark .signup-form p a {
+  color: #1e40af; /* Deep Blue link on white background */
+}
+
+.signup-page.dark .signup-form p a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode Button */
+.dark-mode-btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Adjust dark-mode button colors depending on mode */
+.signup-page.light .dark-mode-btn {
+  background-color: #ffffff;
+  color: #001f3f;
+}
+
+.signup-page.light .dark-mode-btn:hover {
+  background-color: #f0f4f8;
+}
+
+.signup-page.dark .dark-mode-btn {
+  background-color: #1e40af;
+  color: #ffffff;
+}
+
+.signup-page.dark .dark-mode-btn:hover {
+  background-color: #162e72;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 30px 20px;
+  }
+
+  .signup-logo {
+    width: 120px;
+  }
+
+  .signup-form h2 {
+    font-size: 1.75rem;
+  }
+
+  .signup-form input {
+    padding: 10px 12px;
+  }
+
+  .signup-form button[type="submit"] {
+    padding: 10px;
+  }
+}

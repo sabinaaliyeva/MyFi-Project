@@ -1,0 +1,150 @@
+/* Base Styles */
+.honeypot-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Light/Dark Mode Backgrounds */
+  .honeypot-page.light {
+    background-color: #ffffff; /* White background in light mode */
+  }
+  
+  .honeypot-page.dark {
+    background-color: #0f1a2b; /* Dark blue background in dark mode */
+  }
+  
+  /* Logo Container */
+  .logo-container {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .honeypot-logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  /* Honeypot Container Styles */
+  .honeypot-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+  
+  /* Light mode: dark blue box, dark mode: white box */
+  .honeypot-page.light .honeypot-container {
+    background-color: #001f3f; /* Dark Blue in light mode */
+  }
+  
+  .honeypot-page.dark .honeypot-container {
+    background-color: #ffffff; /* White in dark mode */
+  }
+  
+  /* Heading Styles */
+  .honeypot-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .honeypot-page.light .honeypot-container h2 {
+    color: #ffffff; /* White text on dark blue box in light mode */
+  }
+  
+  .honeypot-page.dark .honeypot-container h2 {
+    color: #1e40af; /* Deep blue text on white box in dark mode */
+  }
+  
+  /* Description text */
+  .description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .honeypot-page.light .description {
+    color: #ffffff; /* White text on dark blue */
+  }
+  
+  .honeypot-page.dark .description {
+    color: #333333; /* Dark text on white */
+  }
+  
+  /* Video Placeholder */
+  .video-placeholder {
+    margin-bottom: 30px;
+  }
+  
+  .video-placeholder video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  /* Additional Info Text */
+  .more-info {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .honeypot-page.light .more-info {
+    color: #ffffff;
+  }
+  
+  .honeypot-page.dark .more-info {
+    color: #4b5563;
+  }
+  
+  /* Dark Mode Button */
+  .dark-mode-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Dark-mode button colors depending on mode */
+  .honeypot-page.light .dark-mode-btn {
+    background-color: #ffffff;
+    color: #001f3f;
+  }
+  
+  .honeypot-page.light .dark-mode-btn:hover {
+    background-color: #f0f4f8;
+  }
+  
+  .honeypot-page.dark .dark-mode-btn {
+    background-color: #1e40af;
+    color: #ffffff;
+  }
+  
+  .honeypot-page.dark .dark-mode-btn:hover {
+    background-color: #162e72;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 480px) {
+    .honeypot-logo {
+      width: 120px;
+    }
+  
+    .honeypot-container {
+      padding: 30px 20px;
+    }
+  
+    .honeypot-container h2 {
+      font-size: 1.75rem;
+    }
+  }
+  

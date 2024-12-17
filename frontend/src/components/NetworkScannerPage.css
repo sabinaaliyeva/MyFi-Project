@@ -1,0 +1,49 @@
+/* src/components/NetworkScannerPage.css */
+
+.network-scanner-page {
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .network-scanner-page h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1e40af; /* Deep Blue */
+  }
+  
+  .scan-prompt p,
+  .scanning-status p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .scan-prompt button,
+  .scan-results button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #1e40af;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scan-prompt button:hover,
+  .scan-results button:hover {
+    background-color: #162e72;
+  }
+  
+  .scan-results h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #1e40af;
+  }
+  
+  .scan-results p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  

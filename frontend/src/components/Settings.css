@@ -1,0 +1,156 @@
+/* src/components/Settings.css */
+
+/* Light Mode Styles */
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color); /* Light background */
+  min-height: 100vh;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.settings-card {
+  background-color: var(--secondary-color); /* Light background for card */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.settings-card h2 {
+  font-size: 2rem;
+  color: var(--heading-color); /* Deep Blue */
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Input Fields */
+.settings-form .form-group {
+  margin-bottom: 20px;
+}
+
+.settings-form input[type="text"],
+.settings-form input[type="email"],
+.settings-form input[type="password"] {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.settings-form input:focus {
+  border-color: var(--primary-color); /* Focus Border */
+  outline: none;
+}
+
+.toggle-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.toggle-group label {
+  font-size: 1rem;
+  color: var(--heading-color); /* Deep Blue */
+  font-weight: 500;
+}
+
+.toggle-group input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--primary-color); /* Deep Blue Toggle */
+}
+
+/* Save Button */
+.settings-form button {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: var(--primary-color); /* Deep Blue */
+  color: var(--secondary-color); /* White Text */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.settings-form button:hover {
+  background-color: #1d3b8a; /* Darker Blue on Hover */
+}
+
+/* Dark Mode Styles */
+.settings-container.dark {
+  background-color: #1f2937; /* Dark Background */
+}
+
+.settings-card.dark {
+  background-color: #374151; /* Dark Card Background */
+}
+
+.settings-card h2.dark {
+  color: #e5e7eb; /* Light Text in Dark Mode */
+}
+
+.settings-form input[type="text"],
+.settings-form input[type="email"],
+.settings-form input[type="password"] {
+  background-color: #2d3748; /* Dark Input Background */
+  color: #e5e7eb; /* Light Text in Inputs */
+  border: 1px solid #4a5568; /* Dark Border */
+}
+
+.settings-form input:focus {
+  border-color: #4a90e2; /* Lighter Blue Border on Focus */
+}
+
+.toggle-group label {
+  color: #e5e7eb; /* Light Text for Labels */
+}
+
+.toggle-group input[type="checkbox"] {
+  accent-color: #3182ce; /* Blue Toggle */
+}
+
+.settings-form button {
+  background-color: #3182ce; /* Blue Button */
+}
+
+.settings-form button:hover {
+  background-color: #1d3b8a; /* Darker Blue Hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .settings-card {
+    padding: 30px;
+  }
+
+  .settings-card h2 {
+    font-size: 1.75rem;
+    margin-bottom: 25px;
+  }
+
+  .settings-form input[type="text"],
+  .settings-form input[type="email"],
+  .settings-form input[type="password"] {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+
+  .toggle-group label {
+    font-size: 0.95rem;
+  }
+
+  .settings-form button {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+}

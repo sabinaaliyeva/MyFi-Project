@@ -1,0 +1,271 @@
+/* src/components/Login.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Light Mode (default) */
+.login-page.light {
+  background-color: #ffffff; /* White background when light mode is off */
+}
+
+/* Dark Mode */
+.login-page.dark {
+  background-color: #0f1a2b; /* Dark Blue background when dark mode is on */
+}
+
+/* Logo Container */
+.logo-container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.login-logo {
+  width: 150px;
+  height: auto;
+}
+
+/* Login Container Styles */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Light mode login box is dark blue, dark mode login box is white */
+.login-page.light .login-container {
+  background-color: #001f3f; /* Dark Blue box in light mode */
+}
+
+.login-page.dark .login-container {
+  background-color: #ffffff; /* White box in dark mode */
+}
+
+.login-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Adjust text color based on mode */
+.login-page.light .login-form h2 {
+  color: #ffffff; /* White text on dark blue box in light mode */
+}
+
+.login-page.dark .login-form h2 {
+  color: #1e40af; /* Deep blue text on white box in dark mode */
+}
+
+.login-form .error {
+  color: #e11d48;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.login-form .form-group {
+  text-align: left;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Label colors depending on mode */
+.login-page.light .login-form label {
+  color: #ffffff; /* White text on dark background */
+}
+
+.login-page.dark .login-form label {
+  color: #1e40af; /* Deep blue text on white background */
+}
+
+/* Input Styles */
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  color: #333333;
+}
+
+.login-form input:focus {
+  border-color: #1e40af;
+  outline: none;
+  box-shadow: 0 0 5px rgba(30, 64, 175, 0.3);
+}
+
+/* Button Styles */
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Adjust button colors depending on mode */
+.login-page.light .login-form button[type="submit"] {
+  background-color: #ffffff;
+  color: #001f3f;
+}
+
+.login-page.light .login-form button[type="submit"]:hover {
+  background-color: #f0f4f8; /* Slightly lighter tone */
+}
+
+.login-page.dark .login-form button[type="submit"] {
+  background-color: #1e40af;
+  color: #ffffff;
+}
+
+.login-page.dark .login-form button[type="submit"]:hover {
+  background-color: #162e72;
+}
+
+/* Subtext */
+.login-form p {
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+/* Adjust link color based on mode */
+.login-page.light .login-form p {
+  color: #ffffff; /* White on dark background */
+}
+
+.login-page.dark .login-form p {
+  color: #4b5563; /* Gray on white background */
+}
+
+.login-form p a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Adjust link hover and color depending on mode */
+.login-page.light .login-form p a {
+  color: #d1d5db; /* Light gray link on dark background */
+}
+
+.login-page.light .login-form p a:hover {
+  text-decoration: underline;
+}
+
+.login-page.dark .login-form p a {
+  color: #1e40af; /* Deep Blue link on white background */
+}
+
+.login-page.dark .login-form p a:hover {
+  text-decoration: underline;
+}
+
+/* Remember Me Checkbox */
+.login-form .remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.login-form .remember-me input {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.password-input {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #1e40af;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.toggle-password:focus {
+  outline: none;
+}
+
+/* Dark Mode Button */
+.dark-mode-btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Adjust dark-mode button colors depending on mode */
+.login-page.light .dark-mode-btn {
+  background-color: #ffffff;
+  color: #001f3f;
+}
+
+.login-page.light .dark-mode-btn:hover {
+  background-color: #f0f4f8;
+}
+
+.login-page.dark .dark-mode-btn {
+  background-color: #1e40af;
+  color: #ffffff;
+}
+
+.login-page.dark .dark-mode-btn:hover {
+  background-color: #162e72;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 30px 20px;
+  }
+
+  .login-logo {
+    width: 120px;
+  }
+
+  .login-form h2 {
+    font-size: 1.75rem;
+  }
+
+  .login-form input {
+    padding: 10px 12px;
+  }
+
+  .login-form button[type="submit"] {
+    padding: 10px;
+  }
+}
+
+.login-logo {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+}

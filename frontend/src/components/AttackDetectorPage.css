@@ -1,0 +1,140 @@
+/* src/components/AttackDetectorPage.css */
+
+.attack-detector-page {
+  background-color: #f3f4f6; /* light grey */
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #1f2937; /* dark text */
+}
+
+.attack-detector-page h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1e40af; /* Deep Blue */
+}
+
+.attack-detector-page .description {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #4b5563; /* gray text */
+}
+
+/* Severity Classification Diagram */
+.severity-chart {
+  margin-bottom: 40px;
+}
+
+.severity-labels {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.severity-labels span {
+  color: #1f2937;
+}
+
+.severity-bar-container {
+  display: flex;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  background-color: #e5e7eb; /* light gray background */
+}
+
+.severity-bar {
+  height: 100%;
+}
+
+.weak-bar {
+  background-color: #93c5fd; /* light blue for weak */
+}
+
+.medium-bar {
+  background-color: #f59e0b; /* orange for medium */
+}
+
+.high-bar {
+  background-color: #ef4444; /* red for high */
+}
+
+/* Logs Section */
+.logs-section {
+  margin-top: 40px;
+}
+
+.logs-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #1e40af;
+}
+
+.logs-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.log-entry {
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.log-entry:last-child {
+  border-bottom: none;
+}
+
+.log-time {
+  color: #6b7280; /* Gray color for the timestamp */
+  margin-right: 5px;
+}
+
+/* Severity Coloring (optional) */
+.log-entry.weak {
+  color: #1f2937; /* normal text, weak severity */
+}
+
+.log-entry.medium {
+  color: #b45309; /* dark orange to indicate medium severity */
+}
+
+.log-entry.high {
+  color: #b91c1c; /* darker red for high severity */
+}
+
+/* Scrollbar styling (optional) */
+.logs-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.logs-container::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+.logs-container::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.refresh-button {
+  background-color: #5a7ae4; /* Green background */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.refresh-button:hover {
+  background-color: #4d75cc;
+}

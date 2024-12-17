@@ -1,0 +1,140 @@
+/* Home container */
+.home-container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+/* Header Section */
+/* Header Section */
+.home-header {
+  text-align: center;
+  padding: 60px 30px;  /* Increased padding for more space inside the header */
+  background-color: #212d52;
+  color: white;
+  margin-bottom: 80px;  /* Increased space between header and team section */
+}
+
+.home-header h1 {
+  font-size: 4rem;  /* Larger font size for the header */
+  margin-bottom: 20px; /* Increased margin between the title and the paragraph */
+}
+
+.home-header p {
+  font-size: 1.5rem; /* Slightly larger font for the paragraph */
+  margin-top: 10px;  /* Added margin to the top for spacing */
+}
+
+/* Team Information */
+.team-info {
+  text-align: center;
+  padding: 60px 30px;  /* Increased padding for more space inside the team section */
+  background-color: #ffffff;
+  margin-top: 60px;  /* Increased space between the header and team section */
+}
+
+.team-info h2 {
+  font-size: 3rem;  /* Larger font size for the "About Our Team" title */
+  color: #333;
+  margin-bottom: 30px;  /* Increased margin between the title and the description */
+}
+
+.team-info p {
+  font-size: 1.4rem;  /* Larger font size for the description */
+  color: #555;
+  line-height: 1.8; /* Increased line height for better readability */
+  max-width: 900px;  /* Increased max width for the paragraph */
+  margin: 0 auto 50px;  /* Increased bottom margin for spacing */
+}
+
+
+/* Video Section */
+.video-placeholder {
+  text-align: center;
+  margin: 10px 20;
+}
+
+.video-placeholder video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Team Section */
+.team-info {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.team-info h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.team-info p {
+  font-size: 1.5;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+/* Team Members Grid */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+  gap: 10px; /* Decrease the gap between images */
+  justify-items: center;
+}
+
+/* Team Member */
+.team-member {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for team member */
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling to make them round and larger */
+.team-member img {
+  width: 300px;        /* Increase the size of the round image */
+  height: 300px;       /* Keep the height the same as the width */
+  border-radius: 100%;  /* Make the image round */
+  object-fit: cover;   /* Ensures the image fits nicely inside the circle */
+  margin-bottom: 20px; /* Space between the image and the text */
+}
+
+/* Member info styling */
+.member-info h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.member-info p {
+  font-size: 1rem;
+  color: #777;
+}
+
+
+
+
+/* Keyframes to move the background image vertically */
+@keyframes moveBackground {
+  0% {
+    background-position: center top;
+  }
+  100% {
+    background-position: center bottom;
+  }
+}

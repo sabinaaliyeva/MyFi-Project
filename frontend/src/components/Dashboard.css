@@ -1,0 +1,168 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #e9eff1); /* Retaining the original background */
+  color: #333;
+}
+
+.dashboard-container {
+  background-color: #f0f4f8; /* light mode */
+  color: #333; /* light mode text color */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centering horizontally */
+  justify-content: flex-start; /* Ensure it doesn't stretch vertically */
+}
+
+.dashboard-container.dark {
+  background-color: #1f2937; /* dark mode background */
+  color: #e5e7eb; /* dark mode text color */
+}
+
+.dark-mode-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1e40af;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.dark-mode-btn:hover {
+  background-color: #3b82f6;
+}
+
+/* Dashboard options section */
+.dashboard-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.dashboard-title {
+  font-size: 3.5rem;
+  color: #2d3748;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: 'Segoe UI', sans-serif;
+  text-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Slightly softer title shadow */
+}
+
+.dashboard-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Flexibility for smaller screens */
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.dashboard-option {
+  background: #ffffff;
+  border-radius: 20px; /* Increased roundness for a softer look */
+  padding: 45px 30px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Deeper shadows */
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px; /* Increased card height for better spacing */
+}
+
+.dashboard-option:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.15); /* Enhanced hover shadow */
+  background: #f4f8fa; /* Slightly lighter background on hover */
+}
+
+.dashboard-option:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: #2d3748;
+  border-radius: 50%;
+  opacity: 0.1;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+.dashboard-option:hover:before {
+  opacity: 0.2;
+  width: 320%;
+  height: 320%;
+}
+
+.option-icon i {
+  font-size: 3.5rem; /* Larger icons for better prominence */
+  color: #2d3748;
+  margin-bottom: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.dashboard-option:hover .option-icon i {
+  color: #3182ce; /* Vibrant blue on hover */
+  transform: scale(1.1); /* Slight scale effect to enhance hover */
+}
+
+.option-content h3 {
+  font-size: 1.9rem;
+  color: #2d3748;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+.option-content p {
+  font-size: 1.1rem;
+  color: #4a5568; /* Slightly darker gray for better contrast */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .dashboard-title {
+    font-size: 2.8rem;
+  }
+
+  .dashboard-options {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-title {
+    font-size: 2.2rem;
+  }
+
+  .dashboard-option {
+    padding: 30px 20px;
+    height: 260px; /* Adjusted height for smaller screens */
+  }
+}

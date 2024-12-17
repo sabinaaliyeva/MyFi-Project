@@ -1,0 +1,32 @@
+/* src/index.css */
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Import Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Define CSS Variables */
+:root {
+  --primary-color: #1e40af; /* Deep Blue */
+  --secondary-color: #ffffff; /* White */
+  --accent-color: #000000; /* Black */
+  --background-color: #f0f4f8; /* Light Gray Background */
+  --text-color: #333333; /* Dark Gray Text */
+  --heading-color: #1e40af; /* Deep Blue for Headings */
+  --subheading-color: #4b5563; /* Gray for Subheadings */
+}
+
+/* Apply Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Additional Global Styles (if any) */

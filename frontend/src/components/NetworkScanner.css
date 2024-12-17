@@ -1,0 +1,151 @@
+/* src/components/NetworkScanner.css */
+
+/* Base Styles */
+.network-scanner-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Light/Dark Mode Backgrounds */
+.network-scanner-page.light {
+  background-color: #ffffff; /* White background in light mode */
+}
+
+.network-scanner-page.dark {
+  background-color: #0f1a2b; /* Dark blue background in dark mode */
+}
+
+/* Logo Container */
+.logo-container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.scanner-logo {
+  width: 150px;
+  height: auto;
+}
+
+/* Scanner Container Styles */
+.scanner-container {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Light mode: dark blue box, dark mode: white box */
+.network-scanner-page.light .scanner-container {
+  background-color: #001f3f; /* Dark Blue in light mode */
+}
+
+.network-scanner-page.dark .scanner-container {
+  background-color: #ffffff; /* White in dark mode */
+}
+
+/* Heading Styles */
+.scanner-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.network-scanner-page.light .scanner-container h2 {
+  color: #ffffff; /* White text on dark blue box in light mode */
+}
+
+.network-scanner-page.dark .scanner-container h2 {
+  color: #1e40af; /* Deep blue text on white box in dark mode */
+}
+
+/* Description text */
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.network-scanner-page.light .description {
+  color: #ffffff; /* White text on dark blue */
+}
+
+.network-scanner-page.dark .description {
+  color: #333333; /* Dark text on white */
+}
+
+/* Video Placeholder */
+.video-placeholder {
+  margin-bottom: 30px;
+}
+
+.video-placeholder video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Additional Info Text */
+.more-info {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.network-scanner-page.light .more-info {
+  color: #ffffff;
+}
+
+.network-scanner-page.dark .more-info {
+  color: #4b5563;
+}
+
+/* Dark Mode Button */
+.dark-mode-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Dark-mode button colors depending on mode */
+.network-scanner-page.light .dark-mode-btn {
+  background-color: #ffffff;
+  color: #001f3f;
+}
+
+.network-scanner-page.light .dark-mode-btn:hover {
+  background-color: #f0f4f8;
+}
+
+.network-scanner-page.dark .dark-mode-btn {
+  background-color: #1e40af;
+  color: #ffffff;
+}
+
+.network-scanner-page.dark .dark-mode-btn:hover {
+  background-color: #162e72;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .scanner-logo {
+    width: 120px;
+  }
+
+  .scanner-container {
+    padding: 30px 20px;
+  }
+
+  .scanner-container h2 {
+    font-size: 1.75rem;
+  }
+}

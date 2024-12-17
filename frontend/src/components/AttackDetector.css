@@ -1,0 +1,185 @@
+/* src/components/AttackDetector.css */
+
+/* Base page styling */
+.attack-detector-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Light/Dark Mode Backgrounds */
+.attack-detector-page.light {
+  background-color: #ffffff; /* White background in light mode */
+}
+
+.attack-detector-page.dark {
+  background-color: #0f1a2b; /* Dark blue background in dark mode */
+}
+
+/* Logo container above the box */
+.logo-container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.attack-detector-logo {
+  width: 150px;
+  height: auto;
+}
+
+/* Container for the main content */
+.attack-detector-container {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Light mode: dark blue box, dark mode: white box */
+.attack-detector-page.light .attack-detector-container {
+  background-color: #001f3f; /* Dark Blue in light mode */
+}
+
+.attack-detector-page.dark .attack-detector-container {
+  background-color: #ffffff; /* White in dark mode */
+}
+
+/* Heading Styles */
+.attack-detector-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Heading colors based on mode */
+.attack-detector-page.light .attack-detector-container h2 {
+  color: #ffffff; /* White on dark blue */
+}
+
+.attack-detector-page.dark .attack-detector-container h2 {
+  color: #1e40af; /* Deep blue on white */
+}
+
+/* Description text */
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Description color based on mode */
+.attack-detector-page.light .description {
+  color: #ffffff; /* White text on dark blue background */
+}
+
+.attack-detector-page.dark .description {
+  color: #333333; /* Dark text on white background */
+}
+
+/* Video Placeholder styling */
+.video-placeholder {
+  margin-bottom: 30px;
+}
+
+.video-placeholder video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Additional info text */
+.more-info {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Adjust colors for .more-info based on mode */
+.attack-detector-page.light .more-info {
+  color: #ffffff;
+}
+
+.attack-detector-page.dark .more-info {
+  color: #4b5563;
+}
+
+/* Dashboard button */
+.detector-dashboard-button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Different button colors depending on mode */
+.attack-detector-page.light .detector-dashboard-button {
+  background-color: #ffffff;
+  color: #001f3f;
+}
+
+.attack-detector-page.light .detector-dashboard-button:hover {
+  background-color: #f0f4f8;
+}
+
+.attack-detector-page.dark .detector-dashboard-button {
+  background-color: #1e40af;
+  color: #ffffff;
+}
+
+.attack-detector-page.dark .detector-dashboard-button:hover {
+  background-color: #162e72;
+}
+
+/* Dark Mode button styling */
+.dark-mode-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Dark-mode button colors depending on mode */
+.attack-detector-page.light .dark-mode-btn {
+  background-color: #ffffff;
+  color: #001f3f;
+}
+
+.attack-detector-page.light .dark-mode-btn:hover {
+  background-color: #f0f4f8;
+}
+
+.attack-detector-page.dark .dark-mode-btn {
+  background-color: #1e40af;
+  color: #ffffff;
+}
+
+.attack-detector-page.dark .dark-mode-btn:hover {
+  background-color: #162e72;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .attack-detector-logo {
+    width: 120px;
+  }
+
+  .attack-detector-container {
+    padding: 30px 20px;
+  }
+
+  .attack-detector-container h2 {
+    font-size: 1.75rem;
+  }
+}
+

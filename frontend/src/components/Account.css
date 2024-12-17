@@ -1,0 +1,124 @@
+/* src/components/Account.css */
+
+/* Light Mode Styles */
+.account-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f4f8; /* Light Gray Background */
+  min-height: 100vh;
+  padding-top: 80px; /* Top padding to avoid navbar overlap */
+}
+
+.account-card {
+  background-color: #ffffff; /* White Background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.account-card h2 {
+  font-size: 2rem;
+  color: #1e40af; /* Deep Blue */
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Form styling */
+.account-card .form-group {
+  margin-bottom: 20px;
+}
+
+.account-card label {
+  display: block;
+  margin-bottom: 5px;
+  color: #1e40af; /* Deep Blue */
+  font-weight: 500;
+}
+
+.account-card input[type="text"],
+.account-card input[type="email"] {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #d1d5db; /* Light Gray Border */
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333333; /* Dark Gray Text */
+}
+
+.account-card input:focus {
+  border-color: #1e40af; /* Deep Blue Focus Border */
+  outline: none;
+}
+
+.account-card button {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #1e40af; /* Deep Blue */
+  color: #ffffff; /* White Text */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.account-card button:hover {
+  background-color: #1d3b8a; /* Darker Blue on Hover */
+}
+
+/* Dark Mode Styles */
+.account-container.dark {
+  background-color: #1f2937; /* Dark Background */
+}
+
+.account-card.dark {
+  background-color: #374151; /* Dark Card Background */
+}
+
+.account-card h2.dark {
+  color: #e5e7eb; /* Light Text in Dark Mode */
+}
+
+.account-card input[type="text"],
+.account-card input[type="email"] {
+  background-color: #2d3748; /* Dark Input Background */
+  color: #e5e7eb; /* Light Text in Inputs */
+  border: 1px solid #4a5568; /* Dark Border */
+}
+
+.account-card input:focus {
+  border-color: #4a90e2; /* Lighter Blue Border on Focus */
+}
+
+.account-card button {
+  background-color: #3182ce; /* Blue Button */
+}
+
+.account-card button:hover {
+  background-color: #1d3b8a; /* Darker Blue Hover */
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1e40af;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.dark-mode-btn:hover {
+  background-color: #3b82f6;
+}
